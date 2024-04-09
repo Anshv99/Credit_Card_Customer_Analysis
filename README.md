@@ -1,14 +1,14 @@
 # Credit_Card_Customer_Analysis
 
-### Overview
+## Overview
 This project aims to conduct a comprehensive analysis of credit card customers using the provided dataset from Kaggle. The analysis encompasses data manipulation, visualization, customer segmentation, and predictive modeling to gain insights into customer behavior and predict churn. The project also utilizes Git for version control.
 
-### How to Run the Code
+## How to Run the Code
 1. Clone this repository to your local machine.
 2. Download the dataset from the provided Kaggle link and place it in the data folder.
 3. Open Jupyter notebooks in the notebooks folder and open main.ipynb code execution.
 
-### Summary of Findings and Insights
+## Summary of Findings and Insights :-
 
 ### Step 1: Data Exploration and Preprocessing
 - No missing values or repeated entries were found in the dataset.
