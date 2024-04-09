@@ -56,12 +56,15 @@ By combining these methods, we can find the best number of clusters that effecti
   ### Given the high dimensionality of our DataFrame, consisting of 19 columns, I will apply PCA (Principal Component Analysis) to reduce its dimensionality to 2, aiming to simplify the visualization and interpretation of the data in 2D plot.
 
 - After applying PCA we count each cluster
+
   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/8942454c-a007-45a5-8102-fa432aeef18c)
 
 - plotting the centroids
+  
   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/59f58787-7196-454a-9746-ab82e1d3e28e)
 
 - plotting the Clusters with datapoints
+  
   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/b35686d0-4b47-4458-9d51-d9ae65f4126c)
 
 ### Step 3.1: Cluster Analysis
@@ -85,6 +88,7 @@ By combining these methods, we can find the best number of clusters that effecti
 
 #### Categorical Columns
 - I'll plot some categorical features that I considered important.
+  
   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/8866d8bc-4b57-4973-a6b7-d60f93a601fc)
   
   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/1f624761-b2ab-4ac6-8b3e-6b23fffa3c72)
