@@ -37,6 +37,7 @@ This project aims to conduct a comprehensive analysis of credit card customers u
 - To implement the K-means algorithm we have to preprocess the Data. The feature scaling step is crucial, as K-means clustering is sensitive to the scale of features. It ensures that all features contribute equally to the clustering process, preventing variables with larger scales from dominating the analysis.
 
   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/57bdab88-2dca-4d91-a43b-3d1d2a16301a)
+  
   Filtering only numeric columns for comparison.
 
 - To find the best number of clusters for our data, I'll use two common methods:
@@ -45,7 +46,10 @@ This project aims to conduct a comprehensive analysis of credit card customers u
 2. Silhouette Method: I'll calculate how well each data point fits into its assigned cluster compared to other clusters. The average silhouette score measures how similar a point is to its own cluster compared to other clusters. A higher score suggests better-defined clusters. We'll pick the number of clusters with the highest silhouette score.
 
 By combining these methods, we can find the best number of clusters that effectively capture the patterns in our data.
-![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/3f0c145b-fdb0-48fa-998a-3dc191b770d4) ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/b03efd08-7056-4f97-ac83-464cef7aeba1)
+
+![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/3f0c145b-fdb0-48fa-998a-3dc191b770d4) 
+
+![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/b03efd08-7056-4f97-ac83-464cef7aeba1)
 
 - In the Elbow method graph, we observe it pointing to a number of 3 clusters. Considering that the value of 3 clusters has the best score in the Silhouette method, based on these two indicators, I will define the number of clusters as 3.
 
@@ -68,6 +72,7 @@ By combining these methods, we can find the best number of clusters that effecti
 - I will select the main numerical columns and these will be plotted together using pairplots and boxplots.
 
 ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/0e6bfc8b-265a-4d80-b989-a0151c1080d3)
+
 ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/097ac0f6-5a66-40a6-9482-d5b799de9eea)
 
 - In both the pair plot and the box plot, we notice a strong connection between customer age and their tenure with the bank. Cluster 0 comprises older customers with longer bank relationships, while cluster 2 consists of younger customers with shorter tenure. Cluster 1 shows a mix of ages, mostly falling between the medians of clusters 0 and 2, indicating an intermediate age and relationship duration compared to the other clusters. This pattern extends to the duration of the relationship that cluster 1 customers maintain with the bank.
@@ -81,7 +86,9 @@ By combining these methods, we can find the best number of clusters that effecti
 #### Categorical Columns
 - I'll plot some categorical features that I considered important.
   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/8866d8bc-4b57-4973-a6b7-d60f93a601fc)
+  
   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/1f624761-b2ab-4ac6-8b3e-6b23fffa3c72)
+  
   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/64166981-73b8-4b54-ba40-c9e4bcbebb0a)
 
 
