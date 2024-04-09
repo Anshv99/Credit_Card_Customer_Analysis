@@ -96,6 +96,60 @@ By combining these methods, we can find the best number of clusters that effecti
   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/64166981-73b8-4b54-ba40-c9e4bcbebb0a)
 
 
+## Churn Model Prediction Preprocessing 
+
+1. Feature-Encoding
+Before categorical data can be utilized as input to a machine learning model, it must first be transformed into numerical data. There are multiple ways of handling Categorical variables. The two most widely used techniques:
+
+2. Label Encoding
+   
+- One-Hot Encoding
+- Label Encoding
+
+- A unique integer represents each value of the categorical variable. Issue with label encoding is that it can imply an unintended order to the variable. So, we use it only for ordinal variables of our dataset.
+One-Hot Encoding
+- It simply creates additional features called dummy variables based on the number of unique values in the categorical feature. Every unique value in the category will be added as a feature. Issue with one-hot encoding is the Dummy Variable Trap - a scenario in which variables are highly correlated to each other - multicollinearity. So, in order to overcome the problem of multicollinearity, one of the dummy variables has to be dropped. We use one-hot encoding for nominal variables of our dataset.
+
+### Feature-Reduction
+
+- Feature reduction techniques can help in identifying and retaining only the most informative features, reducing redundancy. We use different techniques based on the type of the features.
+
+- Continuous features with multi-collinearity - Principal Component Analysis (PCA) Discrete or Categorical features - SelectKBest
+
+ #### Method 1 - Draw the Correlation Matrix to Check for Multi-Collinearity
+ 
+ ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/b5a22281-f1fa-4e17-8455-abe7368d62c7)
+
+#### Method 2 - Calculate Variance Inflation Factor (VIF) to Check for Multi-Collinearity
+- The variance inflation factor (VIF) is a measure used to assess multicollinearity in regression analysis. It is also calculated for numerical variables only. The general rule of thumb for interpreting VIF values is as follows
+
+![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/d4f5bf3c-b551-46ac-9730-72fad6c005c7)
+
+- Conducting Pca on Standardized Continous Variables
+
+  ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/55373050-0373-4cec-b32a-d39eb8d9ef6f)
+
+- Performing SelectKBest on Discrete and Categorical Variables
+- SelectKBest is sensitive to the scale of the features, particularly when using scoring functions that are affected by feature magnitudes, such as the default function for classification, which is the chi-squared test.
+
+  ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/f64aa603-2e25-4076-88b6-39c1d962dd04)
 
 
+## Building Classification Model
 
+1. KNN Classifier
+
+   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/d4b2387e-19c5-4038-9ac8-7e0a647558fa)
+
+2.Random Forest Classifer
+
+   ![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/07063795-0ea6-4ebe-8739-c5b3488d6d88)
+
+3.Naive Bayes Classifer
+
+![image](https://github.com/Anshv99/Credit_Card_Customer_Analysis/assets/91983097/0998f288-b6b0-42e2-b7fe-28a6dc93601b)
+
+Here we can see that Naive bayes has the highest accuracy score.
+
+## Contributors
+Ansh Vashisht
